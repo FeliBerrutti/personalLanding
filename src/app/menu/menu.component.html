@@ -1,8 +1,16 @@
 <div id="container">
-    <div id="menuButton">
+    <div id="menuButton"
+    (click)="handleMenuClick()">
         <hr>
         <hr>
         <hr>
     </div>
     <div id="menuBanner"></div>
+    @if(isMenuVisible){
+        <div id="menuContent">
+            @for(x of menuOptionsList; track $index){
+                <div class="menuOption">{{x}}</div>
+            }
+        </div>
+    }
 </div>

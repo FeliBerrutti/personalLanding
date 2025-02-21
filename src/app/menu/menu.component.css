@@ -31,6 +31,28 @@
 /* #menuBanner{
 } */
 
+#menuContent{
+    border-left: 1px solid orangered;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(7,7,7,0.98);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20%;
+}
+
+.menuOption{
+    border-bottom: 1px solid orangered;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(200,200,200);
+}
+
 @media(max-width: 320px){
     #container{
         min-height: 60px;
@@ -57,5 +79,15 @@
         min-height: 50px;
         max-height: 55px;
         margin-left: 2%;
+    }
+
+    #menuContent{
+        min-width: 200px;
+    }
+
+    .menuOption{
+        min-height: 25px;
+        max-height: 50px;
+        margin-top: 2.5%;
     }
 }
