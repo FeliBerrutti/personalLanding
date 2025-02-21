@@ -5,12 +5,13 @@ import { PresentationComponent } from './presentation/presentation.component';
 import { TechnologiesComponent } from './technologies/technologies.component';
 import { ProyectsComponent } from './proyects/proyects.component';
 import { FooterComponent } from './footer/footer.component';
+import { WppIconComponent } from './wpp-icon/wpp-icon.component';
 
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, MenuComponent, 
             PresentationComponent, TechnologiesComponent,
-            ProyectsComponent, FooterComponent],
+            ProyectsComponent, FooterComponent, WppIconComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

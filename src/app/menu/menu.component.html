@@ -9,7 +9,8 @@
     @if(isMenuVisible){
         <div id="menuContent">
             @for(x of menuOptionsList; track $index){
-                <div class="menuOption">{{x}}</div>
+                <div class="menuOption"
+                (click)="handleOptionClick($index)">· {{x}}</div>
             }
         </div>
     }

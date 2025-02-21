@@ -19,4 +19,13 @@ export class MenuComponent {
   menuOptionsList: Array<string> = ['Tecnologías','Proyectos',
                                     'Contacto','Para reclutadores',
                                     'Quiero una web','Acerca de mi'];
+
+handleOptionClick(aux: number): void{
+  this.handleMenuClick();
+  aux === 0 ?
+  document.getElementById('cardContainer')?.scrollIntoView({behavior: 'smooth', block: 'center'}) :
+  aux === 1 ?
+  document.getElementById('proyectsCardContainer')?.scrollIntoView({behavior:'smooth', block:'center'}) :
+  console.log('Opcion 3.')
+};
 }

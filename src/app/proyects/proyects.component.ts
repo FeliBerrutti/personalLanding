@@ -18,4 +18,10 @@ export class ProyectsComponent {
   handleIMG(aux: number): string{
     return this.proyectsImgList[aux];
   };
+
+  handleCardClick(aux: number): void{
+    aux === 0 ?
+    window.open('https://feliberrutti.github.io/EL-10-VP', '_blank') :
+    console.log('Opcion 2');
+  };
 }

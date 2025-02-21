@@ -1,8 +1,9 @@
 <div id="component">
     <h2 class="contentTitles"><b>Proyectos</b></h2>
-    <div id="cardContainer">
+    <div id="proyectsCardContainer">
         @for(x of proyectsList; track $index){
-            <div class="card">
+            <div class="card"
+            (click)="handleCardClick($index)">
                 <div class="cardIMG">
                     <img [src]="handleIMG($index)" alt="el10go" width="100%" height="100%">
                 </div>
