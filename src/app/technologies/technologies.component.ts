@@ -11,6 +11,7 @@ export class TechnologiesComponent {
   technologiesList: Array<string> = ['C#','PostgreSQL',
                                       'Typescript', 'HTML',
                                       'CSS','Vue.js','Angular'];
+                                      
   technologiesIMGList: Array<string> = ['CSHARP.png','Postgre.png',
                                         'TS.png','HTML.png',
                                         'CSS.png','VUEJS.png',

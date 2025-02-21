@@ -1,0 +1,28 @@
+<div id="container">
+    <div class="footerContent">
+        <b>Seguime</b>
+        @for(x of followList; track $index){
+            <div class="footerContentText">
+                {{x}}
+            </div>
+        }
+    </div>
+    <hr>
+    <div class="footerContent">
+        <b>Contactame</b>
+        @for(x of contactList; track $index){
+            <div class="footerContentText">
+                {{x}}
+            </div>
+        }
+    </div>
+    <hr>
+    <div class="footerContent">
+        <b>Acerca de</b>
+        @for(x of aboutList; track $index){
+            <div class="footerContentText">
+                {{x}}
+            </div>
+        }
+    </div>
+</div>

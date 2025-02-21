@@ -1,14 +1,16 @@
 <div id="component">
     <h2><b>Proyectos</b></h2>
     <div id="cardContainer">
-        <div class="card">
-            <div class="cardIMG">
-
+        @for(x of proyectsList; track $index){
+            <div class="card">
+                <div class="cardIMG">
+                    <img [src]="handleIMG($index)" alt="el10go" width="100%" height="100%">
+                </div>
+                <p>
+                    <b>{{x}}</b> <br>
+                    {{proyectTextList[$index]}}
+                </p>
             </div>
-            <p>
-                <b>Titulo</b> <br>
-                enim recusandae dolorum animi molestias! Doloribus vitae nemo a veritatis voluptas?
-            </p>
-        </div>
+        }
     </div>
 </div>
