@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -16,9 +16,10 @@ export class MenuComponent {
     this.isMenuVisible = true
   };
 
+  // AGREGAR
+// 'Para reclutadores','Quiero una web'
   menuOptionsList: Array<string> = ['Tecnologías','Proyectos',
-                                    'Contacto','Para reclutadores',
-                                    'Quiero una web','Acerca de mi'];
+                                    'Contacto'];
 
 handleOptionClick(aux: number): void{
   this.handleMenuClick();
@@ -26,6 +27,6 @@ handleOptionClick(aux: number): void{
   document.getElementById('cardContainer')?.scrollIntoView({behavior: 'smooth', block: 'center'}) :
   aux === 1 ?
   document.getElementById('proyectsCardContainer')?.scrollIntoView({behavior:'smooth', block:'center'}) :
-  console.log('Opcion 3.')
+  console.log('Opcion 3.');
 };
 }

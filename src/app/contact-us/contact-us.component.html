@@ -1,0 +1,39 @@
+<div 
+*ngIf="isContactUsVisible"
+id="container">
+    <div id="contactOptionsCloseButton"
+    (click)="handleContactUsClick()">X</div>
+    <div *ngIf="isContactUsOptionsVisible"
+     id="contactOptionsContainer">
+        @for(x of contactList; track $index){
+            <div class="contactOptions"
+            (click)="handleContactOptionClick($index)">
+                <div class="contactOptionsIMG">
+                    <img [src]="handleIMG($index)" alt="">
+                </div>
+                <b>{{x}}</b>
+            </div>
+        }
+    </div>
+    <form *ngIf="isContactMailVisible"
+    id="contactUsMailForm">
+        <div class="contactFormInputContainer">
+            <div class="contactFormLabel">
+                <b>Nombre</b>
+            </div>
+            <input class="contactFormInput" type="text" required>
+        </div>
+        <div class="contactFormInputContainer">
+            <div class="contactFormLabel">
+                <b>Mail</b>
+            </div>
+            <input class="contactFormInput" type="mail" required>
+        </div>
+        <div id="contactFormTextAreaContainer">
+            <b>Mensaje</b>
+            <textarea name="" id="contactFormTextArea"
+            rows="50"></textarea>
+        </div>
+        <button id="contactFormButton"><b>ENVIAR</b></button>
+    </form>
+</div>

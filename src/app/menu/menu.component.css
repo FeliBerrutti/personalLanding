@@ -32,7 +32,7 @@
 } */
 
 #menuContent{
-    border-left: 1px solid orangered;
+    border-left: 1px solid orange;
     position: fixed;
     right: 0;
     top: 0;
@@ -45,7 +45,7 @@
 }
 
 .menuOption{
-    border-bottom: 1px solid orangered;
+    border-bottom: 1px solid orange;
     width: 80%;
     display: flex;
     flex-direction: row;
