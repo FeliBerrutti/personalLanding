@@ -20,7 +20,7 @@ import { CommonModule, NgIf } from '@angular/common';
 export class AppComponent {
   _isContactUsVisible: boolean = false;
 
-  _showContact(){
+  _showContact(): void{
     this._isContactUsVisible = !this._isContactUsVisible;
   };
 }

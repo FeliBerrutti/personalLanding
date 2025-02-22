@@ -24,7 +24,9 @@ export class MenuComponent {
     @Output() auxShowContact = new EventEmitter<void>();
 
     showContact(): void{
-      console.log('Función enviada.')
+      document.getElementById('presentationPhoto')?.scrollIntoView({
+        behavior: 'smooth', block:'center'
+      });
       this.auxShowContact.emit();
     };  
 
