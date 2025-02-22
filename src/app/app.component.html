@@ -1,8 +1,9 @@
-<menu></menu>
-<contact-us></contact-us>
-<!-- <contact-us iscontactUsVisible ="{{_isContactUsVisible}}"></contact-us> -->
+<div id="container">
+<menu (auxShowContact)="_showContact()"></menu>
+<contact-us [showContactUs]="_isContactUsVisible"></contact-us>
 <wpp-icon></wpp-icon>
 <presentation></presentation>
 <technologies></technologies>
 <proyects></proyects>
 <footer></footer>
+</div>

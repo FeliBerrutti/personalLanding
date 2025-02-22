@@ -21,12 +21,19 @@ export class MenuComponent {
   menuOptionsList: Array<string> = ['Tecnologías','Proyectos',
                                     'Contacto'];
 
+    @Output() auxShowContact = new EventEmitter<void>();
+
+    showContact(): void{
+      console.log('Función enviada.')
+      this.auxShowContact.emit();
+    };  
+
 handleOptionClick(aux: number): void{
   this.handleMenuClick();
   aux === 0 ?
   document.getElementById('cardContainer')?.scrollIntoView({behavior: 'smooth', block: 'center'}) :
   aux === 1 ?
   document.getElementById('proyectsCardContainer')?.scrollIntoView({behavior:'smooth', block:'center'}) :
-  console.log('Opcion 3.');
+  this.showContact();
 };
 }

@@ -8,13 +8,24 @@ import { CommonModule, NgIf } from '@angular/common';
   styleUrl: './contact-us.component.css'
 })
 export class ContactUsComponent {
-  isContactUsVisible: boolean = true;
+  isContactUsVisible: boolean = false;
   isContactUsOptionsVisible: boolean = true;
   isContactMailVisible: boolean = false;
 
-  handleContactUsClick(): void{
-    this.isContactUsVisible = !this.isContactUsVisible;
+  @Input() set showContactUs(value: boolean){
+    this.isContactUsVisible = true;
+    this.isContactUsOptionsVisible = true;
   };
+
+  // handleContactUsClick(): void{
+  //   this.isContactUsVisible = !this.isContactUsVisible;
+  // };
+
+  closeContactUs(): void{
+    this.isContactUsOptionsVisible = false;
+    this.isContactMailVisible = false;
+    this.isContactUsVisible = false;
+  }
 
   handleIMG(aux: number): string{
     return this.contactIMGList[aux];

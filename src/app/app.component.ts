@@ -7,8 +7,7 @@ import { ProyectsComponent } from './proyects/proyects.component';
 import { FooterComponent } from './footer/footer.component';
 import { WppIconComponent } from './wpp-icon/wpp-icon.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
-import { EventEmitter } from 'stream';
-
+import { CommonModule, NgIf } from '@angular/common';
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, MenuComponent, 
@@ -19,9 +18,9 @@ import { EventEmitter } from 'stream';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  // @Input() _isContactUsVisible: boolean = false;
+  _isContactUsVisible: boolean = false;
 
-  // handleContactUsModal(): void{
-    
-  // };
+  _showContact(){
+    this._isContactUsVisible = !this._isContactUsVisible;
+  };
 }

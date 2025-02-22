@@ -2,7 +2,7 @@
 *ngIf="isContactUsVisible"
 id="container">
     <div id="contactOptionsCloseButton"
-    (click)="handleContactUsClick()">X</div>
+    (click)="closeContactUs()">X</div>
     <div *ngIf="isContactUsOptionsVisible"
      id="contactOptionsContainer">
         @for(x of contactList; track $index){
