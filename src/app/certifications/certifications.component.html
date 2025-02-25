@@ -1,0 +1,14 @@
+<div id="component">
+    <h2><b>Certificaciones</b></h2>
+    <div id="certificationsComponent">
+        @for(x of certificationsList; track $index){
+            <div class="certificationContent"
+            (click)="handleContentClick($index)">
+                <div class="certificationIMG">
+                    <img [src]="handleCertificationIMG($index)" alt="">
+                </div>
+                <div class="certificationText">{{x}}</div>
+            </div>
+        }
+    </div>
+</div>

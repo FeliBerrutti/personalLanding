@@ -8,12 +8,14 @@ import { FooterComponent } from './footer/footer.component';
 import { WppIconComponent } from './wpp-icon/wpp-icon.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { CommonModule, NgIf } from '@angular/common';
+import { CertificationsComponent } from './certifications/certifications.component';
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, MenuComponent, 
             PresentationComponent, TechnologiesComponent,
             ProyectsComponent, FooterComponent, 
-            WppIconComponent, ContactUsComponent],
+            WppIconComponent, ContactUsComponent,
+            CertificationsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
