@@ -72,8 +72,8 @@
 @media(max-width: 320px){
     #component{
         margin-top: 18%;
-        min-height: 500px;
-        max-height: 500px;
+        min-height: 525px;
+        max-height: 525px;
     }
 
     #presentationPhotoComponent{
@@ -125,8 +125,8 @@
 @media(min-width: 321px) and (max-width: 480px){
     #component{
         margin-top: 16%;
-        min-height: 500px;
-        max-height: 500px;
+        min-height: 525px;
+        max-height: 525px;
     }
 
     #presentationPhotoComponent{
@@ -178,8 +178,8 @@
 @media(min-width: 481px) and (max-width: 1328px){
     #component{
         margin-top: 10%;
-        min-height: 450px;
-        max-height: 450px;
+        min-height: 490px;
+        max-height: 490px;
     }
 
     #presentationPhotoComponent{
