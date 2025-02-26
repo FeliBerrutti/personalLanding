@@ -129,7 +129,7 @@ box-shadow: 3px 4px 1.5px 1px rgba(230,165,0,0.6);
     }
 }
 
-@media(min-width: 481px) and (max-width:768px){
+@media(min-width: 481px) and (max-width:1328px){
     #component{
         min-height: 550px;
         max-height: 550px;
@@ -158,5 +158,13 @@ box-shadow: 3px 4px 1.5px 1px rgba(230,165,0,0.6);
         max-height: 175px;
     }
 }
+
+@media(min-width: 769px) and (max-width:1328px){
+    .card{
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+}
+
 
 

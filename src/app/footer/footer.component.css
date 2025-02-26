@@ -85,3 +85,27 @@
         margin-top: 3%;
     }
 }
+
+@media(min-width: 769px) and (max-width: 1328px){
+    #container{
+        min-height: 140px;
+        max-height: 140px;
+        margin-top: 2%;
+        flex-direction: row;
+        hr{
+            display: none;
+        }
+    }
+
+    .footerContent{
+        padding-top: 2%;
+        min-height: 100px;
+        max-height: 100px;
+    }
+
+    .footerContentText{
+        min-width: 100px;
+        max-width: 100px;
+        margin-top: 3%;
+    }
+}

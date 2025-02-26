@@ -134,9 +134,9 @@
 
 }
 
-@media(min-width: 481px) and (max-width: 768px){
+@media(min-width: 481px) and (max-width: 1328px){
     #component{
-        margin-top: 14%;
+        margin-top: 10%;
         min-height: 510px;
         max-height: 510px;
     }
@@ -169,4 +169,10 @@
         border-radius: 5px;
     }
 
+}
+
+@media(min-width:1024px) and (max-width: 1328px){
+    #component{
+        margin-top: 7.5%;
+    }
 }
