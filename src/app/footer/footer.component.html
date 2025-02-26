@@ -2,7 +2,8 @@
     <div class="footerContent">
         <b class="contentTitles">Seguime</b>
         @for(x of followList; track $index){
-            <div class="footerContentText">
+            <div class="footerContentText"
+            (click)="handleFollowClick($index)">
                 {{x}}
             </div>
         }
