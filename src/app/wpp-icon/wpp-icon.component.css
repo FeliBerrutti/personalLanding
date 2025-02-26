@@ -19,3 +19,13 @@
         max-height: 68px;
     }
 }
+
+@media(min-width: 321px) and (max-width: 480px){
+    #container{
+        border-radius: 100px;
+        min-width: 85px;
+        max-width: 85px;
+        min-height: 85px;
+        max-height: 85px;
+    }
+}

@@ -96,3 +96,40 @@
     }
 
 }
+
+@media(min-width: 321px) and (max-width: 480px){
+    #component{
+        margin-top: 16%;
+        min-height: 450px;
+        max-height: 500px;
+    }
+
+    #presentationPhotoComponent{
+        min-height: 180px;
+        max-height: 250px;
+    }
+
+    #presentationPhoto{
+        min-width: 150px;
+        max-width: 200px;
+        min-height: 145px;
+        max-height: 195px;
+        border-radius: 100px;
+        margin-left: 0.5%;
+        margin-bottom: 5%;
+    }
+
+    #presentationText{
+        min-height: 130px;
+        max-height: 135px;
+    }
+
+    #presentationTitle{
+        min-height: 20px;
+        max-height: 25px;
+        min-width: 130px;
+        max-width: 130px;
+        border-radius: 5px;
+    }
+
+}

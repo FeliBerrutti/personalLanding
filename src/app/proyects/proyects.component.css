@@ -99,3 +99,32 @@ box-shadow: 3px 4px 1.5px 1px rgba(230,165,0,0.6);
         max-height: 160px;
     }
 }
+
+@media(min-width: 321px) and (max-width:480px){
+    #component{
+        min-height: 470px;
+        max-height: 470px;
+        margin-top: 4%;
+    }
+
+    #proyectsCardContainer{
+        width: 90%;
+        min-height: 370px;
+        max-height: 370px;
+    }
+
+    .card{
+        min-width: 250px;
+        max-width: 280px;
+        min-height: 330px;
+        max-height: 360px;
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+
+    .cardIMG{
+        margin-top: 7%;
+        min-height: 175px;
+        max-height: 175px;
+    }
+}
