@@ -10,12 +10,13 @@ import { CommonModule, NgIf } from '@angular/common';
 export class ContactUsComponent {
   isContactUsVisible: boolean = true;
   isContactUsOptionsVisible: boolean = false;
-  isContactMailVisible: boolean = false;
+  isContactMailVisible: boolean = true;
 
   @Input() set showContactUs(value: boolean){
     console.log('Ejecutando');
     this.isContactUsVisible = !this.isContactUsVisible;
-    this.isContactUsOptionsVisible = true;
+    // this.isContactUsOptionsVisible = true;
+    this.isContactMailVisible = !this.isContactMailVisible;
   };
 
   // handleContactUsClick(): void{
@@ -28,9 +29,9 @@ export class ContactUsComponent {
     this.isContactUsVisible = false;
   }
 
-  handleIMG(aux: number): string{
-    return this.contactIMGList[aux];
-  };
+  // handleIMG(aux: number): string{
+  //   return this.contactIMGList[aux];
+  // };
 
   handleContactMailButton(): void{
     this.isContactUsOptionsVisible = !this.isContactUsOptionsVisible;
@@ -39,7 +40,6 @@ export class ContactUsComponent {
 
   handleContactWppButton(): void{
     this.isContactUsVisible = !this.isContactUsVisible;
-    window.open('https://wa.me/541157381951', '_blank');
   };
 
   handleContactOptionClick(aux:number): void{
@@ -50,6 +50,6 @@ export class ContactUsComponent {
 
 
 
-  contactList: Array<string> = ['Mail','Whatsapp'];
-  contactIMGList: Array<string> = ['MAIL.png','WPP.png'];
+  // contactList: Array<string> = ['Mail','Whatsapp'];
+  // contactIMGList: Array<string> = ['MAIL.png','WPP.png'];
 }
