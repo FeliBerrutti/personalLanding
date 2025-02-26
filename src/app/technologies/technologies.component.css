@@ -1,10 +1,14 @@
 #container{
     padding: 1%;
-    width: 97%;
+    width: 98%;
     text-align: center;
     border: 2px solid orange;
     border-radius: 10px;
-                                background-color: rgba(0,0,0,0.95);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.95);
 }
 
 #cardContainer{
@@ -106,5 +110,39 @@ box-shadow: 2px 2px 1px 1px rgba(230,165,0,0.6);
         max-height: 65px;
         margin-top: 4%;
         margin-bottom: 15%;
+    }
+}
+
+
+@media(min-width: 481px) and (max-width: 768px){
+    #container{
+        border-radius: 0;
+        width: 98%;
+        min-height: 570px;
+        /* max-height: 570px; */
+        margin-top: 4%;
+    }
+
+    #cardContainer{
+        min-height: 470px;
+        max-height: 510px;
+        min-width: 550px;
+        max-width: 550px;
+    }
+
+    .card{
+        min-width: 110px;
+        max-width: 110px;
+        min-height: 130px;
+        max-height: 130px;
+        margin: 1.8%;
+        box-shadow: 3px 4px 1px 1px rgba(230,165,0,0.6);
+    }
+
+    .cardIMG{
+        min-height: 65px;
+        max-height: 65px;
+        margin-top: 4%;
+        margin-bottom: 25%;
     }
 }
