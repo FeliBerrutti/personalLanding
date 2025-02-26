@@ -17,4 +17,10 @@ export class FooterComponent {
     window.open('https://www.linkedin.com/in/felipeberrutti/', '_blank') :
     window.open('https://github.com/feliberrutti', '_blank');
   };
+
+  handleContactClick(index: number): void{
+    index === 0 ?
+    console.log('Funcion 1.') : 
+    window.open('https://www.linkedin.com/in/felipeberrutti/', '_blank')
+  };
 }

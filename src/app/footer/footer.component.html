@@ -12,7 +12,8 @@
     <div class="footerContent">
         <b class="contentTitles">Contactame</b>
         @for(x of contactList; track $index){
-            <div class="footerContentText">
+            <div class="footerContentText"
+            (click)="handleContactClick($index)">
                 {{x}}
             </div>
         }
