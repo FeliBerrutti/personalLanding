@@ -19,7 +19,7 @@ export class MenuComponent {
   // AGREGAR
 // 'Para reclutadores','Quiero una web'
   menuOptionsList: Array<string> = ['Tecnologías','Proyectos',
-                                    'Contacto'];
+                                    'Certificaciones','Contacto'];
 
     @Output() auxShowContact = new EventEmitter<void>();
 
@@ -36,6 +36,8 @@ handleOptionClick(aux: number): void{
   document.getElementById('cardContainer')?.scrollIntoView({behavior: 'smooth', block: 'center'}) :
   aux === 1 ?
   document.getElementById('proyectsCardContainer')?.scrollIntoView({behavior:'smooth', block:'center'}) :
+  aux === 2 ?
+  document.getElementById('certificationsComponent')?.scrollIntoView({behavior: 'smooth', block: 'center'}) :
   this.showContact();
 };
 }
