@@ -104,11 +104,34 @@
     color: orange;
 }
 
+.mailSendMSJ{
+    padding: 1%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: large;
+}
+
+.mailSendMSJIMG{
+    padding: 1%;
+    img{
+        width: 70%;
+        height: 70%;
+    }
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 @media(max-width: 320px){
     #container{
         top: 10%;
         left: 3.5%;
-        min-height: 200px;
+        min-height: 370px;
     }
 
     /* #contactOptionsContainer{
@@ -179,6 +202,19 @@
         max-height: 25px;
         margin-top: 5%;
     }
+
+    .mailSendMSJ{
+        min-height: 350px;
+        max-height: 370px;
+        font-size: large;
+    }
+
+    .mailSendMSJIMG{
+        min-height: 120px;
+        max-height: 120px;
+        margin-top: 30%;
+        margin-bottom: 5%;
+    }
 }
 
 @media(min-width: 321px) and (max-width: 480px){
@@ -237,6 +273,18 @@
         min-height: 25px;
         max-height: 25px;
         margin-top: 5%;
+    }
+
+    .mailSendMSJ{
+        min-height: 380px;
+        max-height: 380px;
+    }
+
+    .mailSendMSJIMG{
+        min-height: 120px;
+        max-height: 120px;
+        margin-top: 25%;
+        margin-bottom: 10%;
     }
 }
 
@@ -299,6 +347,22 @@
         min-height: 25px;
         max-height: 25px;
         margin-top: 8%;
+    }
+
+    .mailSendMSJ{
+        min-height: 380px;
+        max-height: 380px;
+    }
+
+    .mailSendMSJIMG{
+        min-height: 160px;
+        max-height: 170px;
+        margin-top: 25%;
+        margin-bottom: 5%;
+        img{
+            width: 80%;
+            height: 80%;
+        }
     }
 }
 

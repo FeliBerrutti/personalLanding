@@ -15,7 +15,8 @@ id="container">
             </div>
         }
     </div> -->
-    <form *ngIf="isContactMailVisible"
+
+    <!-- <form *ngIf="isContactMailVisible"
     id="contactUsMailForm">
         <div class="contactFormInputContainer">
             <div class="contactFormLabel">
@@ -29,11 +30,41 @@ id="container">
             </div>
             <input class="contactFormInput" type="mail" required>
         </div>
-        <!-- <div id="contactFormTextAreaContainer"> -->
             <b>Mensaje</b>
             <textarea name="" id="contactFormTextArea"
             rows="50"></textarea>
-        <!-- </div> -->
         <button id="contactFormButton"><b>ENVIAR</b></button>
+    </form> -->
+    <form *ngIf="isContactMailVisible"
+    id="contactUsMailForm" (submit)="sendEmail($event)">
+        <div class="contactFormInputContainer">
+            <div class="contactFormLabel">
+                <b>Nombre</b>
+            </div>
+            <input class="contactFormInput" type="text" name="user_name" required>
+        </div>
+        <div class="contactFormInputContainer">
+            <div class="contactFormLabel">
+                <b>Mail</b>
+            </div>
+            <input class="contactFormInput" type="email" name="user_email" required>
+        </div>
+        <b>Mensaje</b>
+        <textarea name="message" id="contactFormTextArea" rows="50"></textarea>
+        <button id="contactFormButton" type="submit"><b>ENVIAR</b></button>
     </form>
+    <div class="mailSendMSJ"
+    *ngIf="isMailSendOk">
+        <div class="mailSendMSJIMG">
+            <img src="OK.png" alt="">
+        </div>
+        <b>Correo enviado correctamente</b>
+    </div>
+    <div class="mailSendMSJ"
+    *ngIf="isMailSendError">
+        <div class="mailSendMSJIMG">
+            <img src="error.png" alt="">
+        </div>
+        <b>Error al enviar mensaje, intente nuevamente.</b>
+    </div>
 </div>
