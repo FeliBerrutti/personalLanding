@@ -11,7 +11,7 @@ import emailjs, {type EmailJSResponseStatus} from '@emailjs/browser'
 export class ContactUsComponent {
   isContactUsVisible: boolean = true;
   isContactUsOptionsVisible: boolean = false;
-  isContactMailVisible: boolean = false;
+  isContactMailVisible: boolean = true;
   isMailSendOk: boolean = false;
   isMailSendError: boolean = false;
 
@@ -19,7 +19,7 @@ export class ContactUsComponent {
     this.isContactUsVisible = !this.isContactUsVisible;
     // this.isContactUsOptionsVisible = true;
     this.isContactMailVisible = !this.isContactMailVisible;
-    this.isMailSendOk = true;
+    this.isMailSendOk = false;
     this.isMailSendError = false;
   };
 
