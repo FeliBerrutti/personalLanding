@@ -12,12 +12,16 @@ export class ContactUsComponent {
   isContactUsVisible: boolean = true;
   isContactUsOptionsVisible: boolean = false;
   isContactMailVisible: boolean = true;
+  isMailSendOk: boolean = false;
+  isMailSendError: boolean = false;
 
   @Input() set showContactUs(value: boolean){
     console.log('Ejecutando');
     this.isContactUsVisible = !this.isContactUsVisible;
     // this.isContactUsOptionsVisible = true;
     this.isContactMailVisible = !this.isContactMailVisible;
+    this.isMailSendOk = false;
+    this.isMailSendError = false;
   };
 
   // handleContactUsClick(): void{
@@ -57,12 +61,16 @@ export class ContactUsComponent {
       })
       .then(
         () => {
-          console.log('SUCCESS!');
           this.isContactMailVisible = !this.isContactMailVisible;
-          this.isContactUsVisible = !this.isContactUsVisible;
+          this.isMailSendOk = !this.isMailSendOk;
+          setTimeout(() => {
+            this.isContactUsVisible = false;
+          }, 2000);
         },
         (error) => {
-          console.log('FAILED...', (error as EmailJSResponseStatus).text);
+          this.isContactMailVisible = !this.isContactMailVisible;
+          this.isMailSendError = !this.isMailSendError;
+          console.log((error as EmailJSResponseStatus).text);
         },
       );
   }
