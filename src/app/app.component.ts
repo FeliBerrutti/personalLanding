@@ -5,7 +5,6 @@ import { PresentationComponent } from './presentation/presentation.component';
 import { TechnologiesComponent } from './technologies/technologies.component';
 import { ProyectsComponent } from './proyects/proyects.component';
 import { FooterComponent } from './footer/footer.component';
-import { WppIconComponent } from './wpp-icon/wpp-icon.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { CommonModule, NgIf } from '@angular/common';
 import { CertificationsComponent } from './certifications/certifications.component';
@@ -14,8 +13,7 @@ import { CertificationsComponent } from './certifications/certifications.compone
   imports: [RouterOutlet, MenuComponent, 
             PresentationComponent, TechnologiesComponent,
             ProyectsComponent, FooterComponent, 
-            WppIconComponent, ContactUsComponent,
-            CertificationsComponent],
+            ContactUsComponent, CertificationsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

@@ -1,7 +1,7 @@
 #container{
     border: 2px solid orange;
     border-radius: 10px;
-    background-color: black;
+    background-color: rgba(3,0,0);
     position: fixed;
     padding: 1%;
     width: 90%;
@@ -81,7 +81,8 @@
     border: 2px solid orange;
     border-radius: 10px;
     width: 80%;
-    background-color: rgba(15,15,15,0.6);
+    /* background-color: rgba(15,15,15,0.6); */
+    background-color: rgba(100, 0, 0,0.3);
     color: white;
 }
 
@@ -89,7 +90,7 @@
     border: 2px solid orange;
     border-radius: 10px;
     width: 80%;
-    background-color: rgba(15,15,15,0.6);
+    background-color: rgba(100, 0, 0,0.3);
     color: white;
 }
 
