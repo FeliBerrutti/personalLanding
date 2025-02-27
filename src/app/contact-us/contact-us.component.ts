@@ -1,5 +1,6 @@
 import { Component, Input, Output } from '@angular/core';
 import { CommonModule, NgIf } from '@angular/common';
+import emailjs, {type EmailJSResponseStatus} from '@emailjs/browser'
 
 @Component({
   selector: 'contact-us',
@@ -47,6 +48,24 @@ export class ContactUsComponent {
     this.handleContactMailButton() :
     this.handleContactWppButton();
   };
+
+  public sendEmail(e: Event) {
+    e.preventDefault();
+    emailjs
+      .sendForm('ID02', 'TID02', e.target as HTMLFormElement, {
+        publicKey: 'GDb63PqAmervkXikd',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          this.isContactMailVisible = !this.isContactMailVisible;
+          this.isContactUsVisible = !this.isContactUsVisible;
+        },
+        (error) => {
+          console.log('FAILED...', (error as EmailJSResponseStatus).text);
+        },
+      );
+  }
 
 
 
