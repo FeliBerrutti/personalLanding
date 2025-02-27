@@ -1,8 +1,9 @@
 #container{
     padding: 1%;
-    width: 97%;
+    width: 98%;
     text-align: center;
-    border: 2px solid orange;
+    border-top: 2px solid orange;
+    border-bottom: 2px solid orange;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -58,7 +59,7 @@ box-shadow: 2px 2px 1px 1px rgba(230,165,0,0.6);
     #container{
         min-height: 400px;
         max-height: 450px;
-        margin-top: 4%;
+        margin-top: 10%;
     }
 
     #cardContainer{
@@ -83,9 +84,7 @@ box-shadow: 2px 2px 1px 1px rgba(230,165,0,0.6);
 
 @media(min-width: 321px) and (max-width: 480px){
     #container{
-        border: none;
-        border-radius: 0;
-        width: 98%;
+        /* margin: 0.2%; */
         min-height: 570px;
         /* max-height: 570px; */
         margin-top: 4%;
@@ -117,7 +116,6 @@ box-shadow: 2px 2px 1px 1px rgba(230,165,0,0.6);
 @media(min-width: 481px) and (max-width: 1328px){
     #container{
         border-radius: 0;
-        width: 98%;
         min-height: 570px;
         /* max-height: 570px; */
         margin-top: 4%;

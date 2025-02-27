@@ -3,7 +3,7 @@
 id="container">
     <div id="contactOptionsCloseButton"
     (click)="closeContactUs()">X</div>
-    <div *ngIf="isContactUsOptionsVisible"
+    <!-- <div *ngIf="isContactUsOptionsVisible"
      id="contactOptionsContainer">
         @for(x of contactList; track $index){
             <div class="contactOptions"
@@ -14,7 +14,7 @@ id="container">
                 <b>{{x}}</b>
             </div>
         }
-    </div>
+    </div> -->
     <form *ngIf="isContactMailVisible"
     id="contactUsMailForm">
         <div class="contactFormInputContainer">
@@ -29,11 +29,11 @@ id="container">
             </div>
             <input class="contactFormInput" type="mail" required>
         </div>
-        <div id="contactFormTextAreaContainer">
+        <!-- <div id="contactFormTextAreaContainer"> -->
             <b>Mensaje</b>
             <textarea name="" id="contactFormTextArea"
             rows="50"></textarea>
-        </div>
+        <!-- </div> -->
         <button id="contactFormButton"><b>ENVIAR</b></button>
     </form>
 </div>
