@@ -7,10 +7,10 @@
                 <div class="cardIMG">
                     <img [src]="handleIMG($index)" alt="el10go" width="100%" height="100%">
                 </div>
-                <p>
-                    <b>{{x}}</b> <br>
-                    {{proyectTextList[$index]}}
-                </p>
+                    <b>{{x}}</b>
+                    <div class="proyectCardText">
+                        {{proyectTextList[$index]}}
+                    </div>
             </div>
         }
     </div>

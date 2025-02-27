@@ -8,13 +8,13 @@ import { CommonModule } from '@angular/common';
   styleUrl: './proyects.component.css'
 })
 export class ProyectsComponent {
-  proyectsList: Array<string> = ['Landing Page','CRM','Mi Landing page'];
+  proyectsList: Array<string> = ['El 10 de Villa Pueyrredón','CRM','Homepage'];
 
   proyectsImgList: Array<string> = ['EL10VP.gif','CRM.gif','landingShow.gif'];
 
-  proyectTextList: Array<string> = [`Vue.js, CSS3, HTML5, javaScript.`,
-                                    `Vue.js, CSS3, HTML5, javaScript, C# .NET, PostgreSQL.`,
-                                    `Angular, CSS3, HTML5`];
+  proyectTextList: Array<string> = [` Landing page para negocio de alquiler de volquetes.`,
+                                    `Sistema de gestión de relaciones con clientes.`,
+                                    `Mi pagina personal.`];
 
   handleIMG(aux: number): string{
     return this.proyectsImgList[aux];
