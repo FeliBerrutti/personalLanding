@@ -111,6 +111,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    font-size: large;
 }
 
 .mailSendMSJIMG{
@@ -272,6 +273,18 @@
         max-height: 25px;
         margin-top: 5%;
     }
+
+    .mailSendMSJ{
+        min-height: 380px;
+        max-height: 380px;
+    }
+
+    .mailSendMSJIMG{
+        min-height: 120px;
+        max-height: 120px;
+        margin-top: 25%;
+        margin-bottom: 10%;
+    }
 }
 
 @media(min-width: 481px) and (max-width: 1024px){
@@ -333,6 +346,22 @@
         min-height: 25px;
         max-height: 25px;
         margin-top: 8%;
+    }
+
+    .mailSendMSJ{
+        min-height: 380px;
+        max-height: 380px;
+    }
+
+    .mailSendMSJIMG{
+        min-height: 160px;
+        max-height: 170px;
+        margin-top: 25%;
+        margin-bottom: 5%;
+        img{
+            width: 80%;
+            height: 80%;
+        }
     }
 }
 
