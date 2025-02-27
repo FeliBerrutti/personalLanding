@@ -229,3 +229,37 @@ box-shadow: 0.5px 1px 1px 1px grey;
         margin-right: 2%;
     }
 }
+
+@media(min-width: 1329px){
+    #component{
+        min-height: 520px;
+        max-height: 520px;
+        margin-top: 3%;
+    }
+
+    #certificationsComponent{
+        width: 90%;
+        min-height: 420px;
+        max-height: 420px;
+        padding-top: 1%;
+    }
+
+    .certificationContent{
+        min-height: 100px;
+        max-height: 100px;
+        margin-bottom: 1.5%;
+    }
+
+    .certificationIMG{
+        min-height: 90px;
+        max-height: 95px;
+        width: 13%;
+        margin-right: 2%;
+    }
+
+    .certificationText{
+        min-height: 75px;
+        max-height: 75px;
+        font-size: 200%;
+    }
+}

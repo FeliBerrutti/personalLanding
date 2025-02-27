@@ -293,3 +293,54 @@
         margin-top: 7.5%;
     }
 }
+
+@media(min-width: 1329px){
+
+    #component{
+        margin-top: 3.6%;
+    }
+
+    #presentationPhotoComponent{
+        min-height: 180px;
+        max-height: 320px;
+    }
+
+    #presentationPhoto{
+        min-width: 150px;
+        max-width: 250px;
+        min-height: 125px;
+        max-height: 290px;
+        border-radius: 20px;
+        margin-left: 0.5%;
+        margin-top: 3%;
+        img{
+            margin-top: 0;
+        }
+    }
+
+    #presentationText{
+        min-height: 130px;
+        max-height: 135px;
+        margin-top: -15%;
+    }
+
+    #presentationName{
+        width: 70%;
+        min-height: 35px;
+        max-height: 35px;
+        font-size: 210%;
+        text-wrap: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    #presentationTitle{
+        min-height: 23px;
+        max-height: 23px;
+        /* min-width: 150px; */
+        max-width: 270px;
+        width: 65%;
+        border-radius: 5px;
+        margin-top: 3%;
+        font-size: 115%;
+    }
+}

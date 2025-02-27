@@ -183,3 +183,42 @@
         margin-left: 2%;
     }
 }
+
+@media(min-width: 1329px){
+    #container{
+        min-height: 80px;
+        max-height: 80px;
+    }
+
+    #menuButton{
+        min-width: 60px;
+        max-width: 60px;
+        min-height: 55px;
+        max-height: 55px;
+        margin-left: 2%;
+    }
+
+    #menuButton hr{
+        margin: 10%;
+
+    }
+
+    #menuBanner{
+        min-width: 260px;
+        max-width: 265px;
+        min-height: 50px;
+        max-height: 55px;
+        margin-left: 2%;
+    }
+
+    #menuContent{
+        padding-top: 10%;
+        min-width: 200px;
+    }
+
+    .menuOption{
+        min-height: 40px;
+        max-height: 40px;
+        margin-top: 2.5%;
+    }
+}
