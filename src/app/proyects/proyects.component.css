@@ -16,24 +16,8 @@
     flex-direction: row;
     align-items: center;
     overflow: scroll;
-    /* background: linear-gradient(to bottom, 
-    rgb(1,1,2),
-  #000000,
-  #001a4d, 
-  #003366, 
-  #004080, 
-  #0066cc,
-  #00509e, 
-  #0066cc,
-  #0066cc, 
-  #004080,
-  #0073e6,
-  #001a4d,
-  #000000,
-  rgb(1,1,2)
-); */
-background: rgba(180,0,0,0,050);
-box-shadow: 3px 4px 1.5px 1px rgba(230,165,0,0.6);
+    background-color: rgb(5,5,5);
+    box-shadow: 3px 4px 1.5px 1px rgba(230,165,0,0.6);
 }
 
 .card{
