@@ -88,6 +88,7 @@ box-shadow: 2px 2px 1px 1px rgba(230,165,0,0.6);
         min-height: 570px;
         /* max-height: 570px; */
         margin-top: 4%;
+        padding-bottom: 2%;
     }
 
     #cardContainer{
@@ -101,6 +102,8 @@ box-shadow: 2px 2px 1px 1px rgba(230,165,0,0.6);
         min-height: 90px;
         max-height: 110px;
         margin: 1.8%;
+        margin-right: 5%;
+        margin-left: 5%;
         box-shadow: 3px 4px 1px 1px rgba(230,165,0,0.6);
     }
 
