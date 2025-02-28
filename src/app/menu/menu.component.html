@@ -5,7 +5,14 @@
         <hr>
         <hr>
     </div>
-    <div id="menuBanner"></div>
+    <div id="menuH">
+        @for(x of menuOptionsList; track $index){
+            <div class="menuOptionH"
+            (click)="handleOptionClick($index)">
+                <b>{{x}}</b>
+            </div>
+        }
+    </div>
     @if(isMenuVisible){
         <div id="menuContent">
             @for(x of menuOptionsList; track $index){

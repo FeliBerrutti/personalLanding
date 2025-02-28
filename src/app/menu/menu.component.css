@@ -28,7 +28,29 @@
     box-shadow: 0.8px 1.5px 1px 0.5px rgba(200,200,200,0.6);
 }
 
+#menuH{
+    padding: 1%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+}
+
+.menuOptionH{
+    width: 8%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    min-height: 30px;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+    color: rgba(230,165,0,0.8);  
+}
+
 #menuContent{
+    width: 20%;
     border-left: 1px solid orange;
     position: fixed;
     right: 0;
@@ -70,12 +92,8 @@
 
     }
 
-    #menuBanner{
-        min-width: 260px;
-        max-width: 265px;
-        min-height: 50px;
-        max-height: 55px;
-        margin-left: 2%;
+    #menuH{
+        display: none;
     }
 
     #menuContent{
@@ -108,12 +126,8 @@
 
     }
 
-    #menuBanner{
-        min-width: 260px;
-        max-width: 265px;
-        min-height: 50px;
-        max-height: 55px;
-        margin-left: 2%;
+    #menuH{
+        display: none;
     }
 
     #menuContent{
@@ -132,14 +146,11 @@
     #container{
         min-height: 80px;
         max-height: 80px;
+        background-color: rgb(3,3,3);
     }
 
     #menuButton{
-        min-width: 50px;
-        max-width: 50px;
-        min-height: 45px;
-        max-height: 45px;
-        margin-left: 2%;
+        display: none;
     }
 
     #menuButton hr{
@@ -147,17 +158,17 @@
 
     }
 
-    #menuBanner{
-        min-width: 260px;
-        max-width: 265px;
-        min-height: 50px;
-        max-height: 55px;
-        margin-left: 2%;
+    #menuH{
+        min-height: 35px;
+        max-height: 35px;
+    }
+
+    .menuOptionH{
+        min-width: 90px;
     }
 
     #menuContent{
-        padding-top: 10%;
-        min-width: 200px;
+        display: none;
     }
 
     .menuOption{
@@ -172,14 +183,44 @@
         min-height: 100px;
         max-height: 100px;
     }
+
+    #menuH{
+        padding-right: 7%;
+    }
 }
 
-@media(min-width: 1024px) and (max-width: 1328px){
+@media(min-width: 1329px){
+    #container{
+        min-height: 80px;
+        max-height: 80px;
+    }
+
     #menuButton{
-        min-width: 60px;
-        max-width: 60px;
-        min-height: 55px;
-        max-height: 55px;
-        margin-left: 2%;
+        display: none;
+    }
+
+    #menuButton hr{
+        margin: 10%;
+
+    }
+
+    #menuH{
+        min-height: 35px;
+        max-height: 35px;
+        padding-right: 8%;
+    }
+
+    .menuOptionH{
+        min-width: 90px;
+    }
+
+    #menuContent{
+        display: none;
+    }
+
+    .menuOption{
+        min-height: 40px;
+        max-height: 40px;
+        margin-top: 2.5%;
     }
 }
