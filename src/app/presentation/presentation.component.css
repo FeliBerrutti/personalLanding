@@ -1,5 +1,6 @@
 #component{
     width: 98%;
+    height: auto;
     padding: 1%;
     display: flex;
     flex-direction: column;
@@ -126,22 +127,20 @@
     #component{
         margin-top: 16%;
         min-height: 525px;
-        max-height: 525px;
     }
 
     #presentationPhotoComponent{
-        min-height: 180px;
-        max-height: 250px;
+        min-height: 230px;
+        max-height: 280px;
     }
 
     #presentationPhoto{
         min-width: 150px;
         max-width: 200px;
-        min-height: 125px;
-        max-height: 230px;
+        min-height: 100px;
+        max-height: 250px;
         border-radius: 20px;
         margin-left: 0.5%;
-        margin-bottom: 5%;
         img{
             margin-top: 0;
         }
@@ -175,7 +174,7 @@
 
 }
 
-@media(min-width: 481px) and (max-width: 1328px){
+@media(min-width: 481px) and (max-width: 768px){
     #component{
         margin-top: 10%;
         min-height: 490px;
@@ -190,40 +189,39 @@
     #presentationPhoto{
         min-width: 150px;
         max-width: 200px;
-        min-height: 125px;
-        max-height: 230px;
+        min-height: 250px;
+        max-height: 250px;
         border-radius: 20px;
         margin-left: 0.5%;
-        margin-bottom: 5%;
         img{
             margin-top: 0;
         }
     }
 
     #presentationText{
-        min-height: 130px;
-        max-height: 135px;
-        margin-top: -15%;
+        min-height: 230px;
+        max-height: 230px;
+        min-width: 242px;
     }
 
     #presentationName{
         width: 95%;
-        min-height: 30px;
-        max-height: 30px;
-        font-size: 160%;
+        min-height: 40px;
+        max-height: 40px;
+        font-size: 200%;
         text-wrap: nowrap;
         text-overflow: ellipsis;
     }
 
     #presentationTitle{
-        min-height: 23px;
-        max-height: 23px;
+        min-height: 33px;
+        max-height: 33px;
         /* min-width: 150px;
         max-width: 170px; */
         width: 95%;
         border-radius: 5px;
         margin-top: 3%;
-        font-size: 115%;
+        font-size: 150%;
     }   
 
     /* #presentationText{
@@ -241,50 +239,58 @@
 
 }
 
-@media(min-width: 768px) and (max-width: 1328px){
+@media(min-width: 769px) and (max-width: 1328px){
+    #component{
+        margin-top: 10%;
+        min-height: 490px;
+        p{
+            font-size: large;
+            text-wrap: inherit;
+            text-overflow: ellipsis;
+            width: 90%;
+            text-align: center;
+        }
+    }
 
     #presentationPhotoComponent{
-        min-height: 180px;
+        min-height: 300px;
         max-height: 320px;
     }
 
     #presentationPhoto{
         min-width: 150px;
         max-width: 250px;
-        min-height: 125px;
-        max-height: 290px;
+        min-height: 300px;
+        max-height: 100px;
         border-radius: 20px;
-        margin-left: 0.5%;
-        margin-top: 3%;
         img{
             margin-top: 0;
         }
     }
 
     #presentationText{
-        min-height: 130px;
-        max-height: 135px;
-        margin-top: -15%;
+        min-height: 290px;
+        max-height: 310px;
     }
 
     #presentationName{
-        width: 70%;
-        min-height: 35px;
-        max-height: 35px;
-        font-size: 210%;
+        width: 80%;
+        min-height: 47px;
+        max-height: 47px;
+        font-size: 230%;
         text-wrap: nowrap;
         text-overflow: ellipsis;
     }
 
     #presentationTitle{
-        min-height: 23px;
-        max-height: 23px;
+        min-height: 35px;
+        max-height: 35px;
         /* min-width: 150px; */
-        max-width: 270px;
-        width: 65%;
+        max-width: 280px;
+        width: 90%;
         border-radius: 5px;
         margin-top: 3%;
-        font-size: 115%;
+        font-size: 160%;
     }
 }
 
