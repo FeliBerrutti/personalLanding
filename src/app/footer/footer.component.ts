@@ -32,8 +32,6 @@ export class FooterComponent {
   };
 
   handleThanksClick(index: number): void{
-    index === 0 ?
-    window.open('https://www.flaticon.es', '_blanked') :
-    console.log('Función 2.');
+    window.open('https://www.flaticon.es', '_blanked');
   }
 }
