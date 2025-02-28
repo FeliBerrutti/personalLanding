@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
 export class FooterComponent {
   followList: Array<string> = ['LinkedIn','GitHub'];
   contactList: Array<string> = ['Mail','LinkedIn'];
-  aboutList: Array<string> = ['Presentación','Quiero una web'];
+  aboutList: Array<string> = ['Flaticon',];
 
   handleFollowClick(index: number): void{
     index === 0 ?
@@ -23,4 +23,10 @@ export class FooterComponent {
     console.log('Funcion 1.') : 
     window.open('https://www.linkedin.com/in/felipeberrutti/', '_blank')
   };
+
+  handleThanksClick(index: number): void{
+    index === 0 ?
+    window.open('https://www.flaticon.es', '_blanked') :
+    console.log('Función 2.');
+  }
 }

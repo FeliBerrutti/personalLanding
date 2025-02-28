@@ -20,9 +20,10 @@
     </div>
     <hr>
     <div class="footerContent">
-        <b class="contentTitles">Acerca de</b>
+        <b class="contentTitles">Agradecimientos</b>
         @for(x of aboutList; track $index){
-            <div class="footerContentText">
+            <div class="footerContentText"
+            (click)="handleThanksClick($index)">
                 {{x}}
             </div>
         }
