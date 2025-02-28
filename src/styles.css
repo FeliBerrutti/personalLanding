@@ -25,3 +25,10 @@ body{
     flex-direction: column;
     overflow: hidden;
 }
+
+@media(min-width:960px){
+    body{
+        background-image: none;
+        background-color: rgb(1,1,1);
+    }
+}

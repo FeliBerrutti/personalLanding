@@ -134,3 +134,16 @@
         margin-top: 3%;
     }
 }
+
+@media(min-width: 960px){
+    #container{
+        background-color: rgb(4,4,4);
+        border-top: 4px solid rgba(230,165,0,0.6);
+        border-bottom: none;
+    }
+
+    .footerContentText:hover{
+        cursor: pointer;
+        color: rgba(230,165,0,0.6);
+    }
+}

@@ -356,3 +356,9 @@
         font-size: 200%;
     }
 }
+
+@media(min-width: 960px){
+    #component{
+        background-color: rgba(4,4,4);
+    }
+}

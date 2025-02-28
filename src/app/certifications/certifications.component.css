@@ -266,3 +266,25 @@ box-shadow: 0.5px 1px 1px 1px grey;
         font-size: 120%;
     }
 }
+
+@media(min-width: 960px){
+    #component{
+        border: none;
+        background-color: rgb(1,1,1);
+    }
+
+    #certificationsComponent{
+        background: radial-gradient(circle, rgb(50,50,50),rgb(40,40,40),
+                                            rgb(35,35,35),rgb(30,30,30),
+                                            rgb(25,25,25),rgb(20,20,20),
+                                            rgb(15,15,15),rgb(10,10,10),
+                                            rgb(1,1,1), rgb(5,5,15));
+        border-radius: 50px;
+        border: none;
+        box-shadow: 0px 0px 300px 30px rgba(5,5,15,0.5);
+    }
+
+    .certificationContent:hover{
+        cursor: pointer;
+    }
+}
