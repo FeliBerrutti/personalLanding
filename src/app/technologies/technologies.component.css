@@ -151,6 +151,11 @@ box-shadow: 2px 2px 1px 1px rgba(230,165,0,0.6);
         margin-left: 3.5%;
         margin-right: 3.5%;
     }
+
+    #cardContainer{
+        min-width: 800px;
+        max-width: 800px;
+    }
 }
 
 @media(min-width: 1329px){
@@ -162,10 +167,10 @@ box-shadow: 2px 2px 1px 1px rgba(230,165,0,0.6);
     }
 
     #cardContainer{
-        min-height: 470px;
-        max-height: 510px;
-        min-width: 550px;
-        max-width: 550px;
+        min-width: 750px;
+        max-width: 750px;
+        min-height: 430px;
+        max-height: 430px;
     }
 
     .card{
