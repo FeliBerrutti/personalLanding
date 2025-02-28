@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
 
 @Component({
   selector: 'footer',
@@ -12,6 +13,12 @@ export class FooterComponent {
   contactList: Array<string> = ['Mail','LinkedIn'];
   aboutList: Array<string> = ['Flaticon',];
 
+  @Output() auxShowContact = new EventEmitter<void>();
+
+  showContact(): void{
+    this.auxShowContact.emit();
+  }
+
   handleFollowClick(index: number): void{
     index === 0 ?
     window.open('https://www.linkedin.com/in/felipeberrutti/', '_blank') :
@@ -20,7 +27,7 @@ export class FooterComponent {
 
   handleContactClick(index: number): void{
     index === 0 ?
-    console.log('Funcion 1.') : 
+    this.showContact() : 
     window.open('https://www.linkedin.com/in/felipeberrutti/', '_blank')
   };
 

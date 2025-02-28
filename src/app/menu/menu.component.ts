@@ -16,17 +16,12 @@ export class MenuComponent {
     this.isMenuVisible = true
   };
 
-  // AGREGAR
-// 'Para reclutadores','Quiero una web'
   menuOptionsList: Array<string> = ['Tecnologías','Proyectos',
                                     'Certificaciones','Contacto'];
 
     @Output() auxShowContact = new EventEmitter<void>();
 
     showContact(): void{
-      document.getElementById('presentationPhoto')?.scrollIntoView(
-        {behavior: 'smooth', block:'center'}
-      );
       this.auxShowContact.emit();
     };  
 
