@@ -225,7 +225,7 @@
     }
 }
 
-@media(min-width: 960px){
+@media(min-width: 480px){
     .menuOptionH:hover{
         cursor: pointer;
         color: rgba(255,255,0,0.7)

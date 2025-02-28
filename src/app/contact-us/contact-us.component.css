@@ -300,6 +300,7 @@
         min-height: 200px;
         max-height: 450px;
         height: 76%;
+        box-shadow: 0px 0px 400px 380px rgba(0,0,0,0.9);
     }
 
     #contactOptionsCloseButton{
@@ -556,7 +557,7 @@
     }
 }
 
-@media(min-width: 960px){
+@media(min-width: 480px){
     #contactOptionsCloseButton:hover{
         cursor: pointer;
     }
