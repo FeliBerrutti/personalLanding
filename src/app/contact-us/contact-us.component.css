@@ -555,3 +555,13 @@
         }
     }
 }
+
+@media(min-width: 960px){
+    #contactOptionsCloseButton:hover{
+        cursor: pointer;
+    }
+
+    #contactFormButton:hover{
+        cursor: pointer;
+    }
+}
