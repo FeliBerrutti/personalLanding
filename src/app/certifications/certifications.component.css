@@ -175,33 +175,35 @@ box-shadow: 0.5px 1px 1px 1px grey;
 
 @media(min-width: 769px) and (max-width: 1328px){
     #component{
-        min-height: 520px;
-        max-height: 520px;
+        min-height: 370px;
+        max-height: 370px;
         margin-top: 3%;
     }
 
     #certificationsComponent{
-        width: 90%;
-        min-height: 420px;
-        max-height: 420px;
+        width: 60%;
+        max-width: 600px;
+        min-height: 250px;
+        max-height: 250px;
     }
 
     .certificationContent{
-        min-height: 100px;
-        max-height: 100px;
+        min-height: 53px;
+        max-height: 53px;
+        box-shadow: 2px 3px 1px 1px grey;
     }
 
     .certificationIMG{
-        min-height: 90px;
-        max-height: 95px;
+        min-height: 49px;
+        max-height: 49px;
         width: 13%;
         margin-right: 2%;
     }
 
     .certificationText{
-        min-height: 75px;
-        max-height: 75px;
-        font-size: 200%;
+        min-height: 40px;
+        max-height: 40px;
+        font-size: 120%;
     }
 }
 
@@ -232,34 +234,34 @@ box-shadow: 0.5px 1px 1px 1px grey;
 
 @media(min-width: 1329px){
     #component{
-        min-height: 520px;
-        max-height: 520px;
+        min-height: 370px;
+        max-height: 370px;
         margin-top: 3%;
     }
 
     #certificationsComponent{
-        width: 90%;
-        min-height: 420px;
-        max-height: 420px;
-        padding-top: 1%;
+        width: 60%;
+        max-width: 600px;
+        min-height: 250px;
+        max-height: 250px;
     }
 
     .certificationContent{
-        min-height: 100px;
-        max-height: 100px;
-        margin-bottom: 1.5%;
+        min-height: 53px;
+        max-height: 53px;
+        box-shadow: 2px 3px 1px 1px grey;
     }
 
     .certificationIMG{
-        min-height: 90px;
-        max-height: 95px;
+        min-height: 49px;
+        max-height: 49px;
         width: 13%;
         margin-right: 2%;
     }
 
     .certificationText{
-        min-height: 75px;
-        max-height: 75px;
-        font-size: 200%;
+        min-height: 40px;
+        max-height: 40px;
+        font-size: 120%;
     }
 }
