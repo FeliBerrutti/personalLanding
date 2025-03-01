@@ -97,7 +97,7 @@
     }
 
     #menuContent{
-        min-width: 200px;
+        max-width: 200px;
     }
 
     .menuOption{
@@ -131,7 +131,7 @@
     }
 
     #menuContent{
-        min-width: 200px;
+        max-width: 200px;
     }
 
     .menuOption{
