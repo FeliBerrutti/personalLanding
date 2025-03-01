@@ -4,6 +4,7 @@ import emailjs, {type EmailJSResponseStatus} from '@emailjs/browser'
 
 @Component({
   selector: 'contact-us',
+  standalone: true,
   imports: [NgIf],
   templateUrl: './contact-us.component.html',
   styleUrl: './contact-us.component.css'

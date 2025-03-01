@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'certifications',
+  standalone: true,
   imports: [],
   templateUrl: './certifications.component.html',
   styleUrl: './certifications.component.css'

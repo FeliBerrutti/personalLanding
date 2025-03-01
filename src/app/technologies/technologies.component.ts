@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'technologies',
+  standalone: true,
   imports: [],
   templateUrl: './technologies.component.html',
   styleUrl: './technologies.component.css'

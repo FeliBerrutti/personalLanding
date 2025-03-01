@@ -10,6 +10,7 @@ import { CommonModule, NgIf } from '@angular/common';
 import { CertificationsComponent } from './certifications/certifications.component';
 @Component({
   selector: 'app-root',
+  standalone: true,
   imports: [RouterOutlet, MenuComponent, 
             PresentationComponent, TechnologiesComponent,
             ProyectsComponent, FooterComponent, 

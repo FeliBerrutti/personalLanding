@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'proyects',
+  standalone: true,
   imports: [],
   templateUrl: './proyects.component.html',
   styleUrl: './proyects.component.css'
