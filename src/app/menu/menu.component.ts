@@ -38,23 +38,23 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
 })
 export class MenuComponent {
   isMenuVisible: boolean = false;
-  auxAnimation = 'final';
-  auxOptionsAnimation = 'final';
+  auxAnimation = 'initial';
+  auxOptionsAnimation = 'initial';
 
   openMenu(): void{
-      this.auxAnimation = 'initial';
+      this.auxAnimation = 'final';
       setTimeout(() => {
-        this.auxOptionsAnimation = 'initial';
-      }, 0);
+        this.auxOptionsAnimation = 'final';
+      }, 500);
       this.isMenuVisible = true;
 
   };
 
   closeMenu(): void{
-      this.auxAnimation = 'final';
+      this.auxAnimation = 'initial';
       setTimeout(() => {
-        this.auxOptionsAnimation = 'final';
-      }, 500);
+        this.auxOptionsAnimation = 'initial';
+      }, 1.5);
       this.isMenuVisible = false;
   };
 
