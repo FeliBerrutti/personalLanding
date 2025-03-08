@@ -1,5 +1,6 @@
 <div id="component">
-    <h2 class="contentTitles"><b>Proyectos</b></h2>
+    <!-- todo!! -->
+    <h2>Proyectos</h2>
     <div id="proyectsCardContainer">
         @for(x of proyectsList; track $index){
             <div class="card"
@@ -7,10 +8,8 @@
                 <div class="cardIMG">
                     <img [src]="handleIMG($index)" alt="el10go" width="100%" height="100%">
                 </div>
-                    <b>{{x}}</b>
-                    <div class="proyectCardText">
-                        {{proyectTextList[$index]}}
-                    </div>
+                    <span><b>{{x}}</b></span>
+                    <span class="proyectCardText">{{proyectTextList[$index]}}</span>
             </div>
         }
     </div>
