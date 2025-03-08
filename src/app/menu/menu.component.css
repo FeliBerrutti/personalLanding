@@ -10,23 +10,39 @@
     flex-direction: row;
     align-items: center;
     background-color: rgba(0,0,0,0.9);
+    button{
+        border: none;
+        border-radius: 5px;
+        padding: 1%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(10,10,10,0.1);
+    }
+    hr{
+        border: 2px solid orange;
+        border-radius: 20px;
+        width: 85%;
+        box-shadow: 0.8px 1.5px 1px 0.5px rgba(200,200,200,0.6);
+    }
 }
 
-#menuButton{
+/* #menuButton{
     border-radius: 5px;
     padding: 1%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
+} */
 
-#menuButton hr{
+/* #menuButton hr{
     border: 2px solid orange;
     border-radius: 20px;
     width: 85%;
     box-shadow: 0.8px 1.5px 1px 0.5px rgba(200,200,200,0.6);
-}
+} */
 
 #menuH{
     padding: 1%;
@@ -75,21 +91,32 @@
     #container{
         min-height: 58px;
         max-height: 58px;
+        button{
+            min-width: 35px;
+            max-width: 40px;
+            min-height: 30px;
+            max-height: 35px;
+            margin-left: 2%;
+            margin-bottom: 3%;
+        }
+        hr{
+            margin: 8.5%;
+        }
     }
 
-    #menuButton{
+    /* #menuButton{
         min-width: 35px;
         max-width: 40px;
         min-height: 30px;
         max-height: 35px;
         margin-left: 2%;
         margin-bottom: 3%;
-    }
+    } */
 
-    #menuButton hr{
+    /* #menuButton hr{
         margin: 8.5%;
 
-    }
+    } */
 
     #menuH{
         display: none;
@@ -110,20 +137,30 @@
     #container{
         min-height: 50px;
         max-height: 80px;
+        button{
+            min-width: 50px;
+            max-width: 50px;
+            min-height: 45px;
+            max-height: 45px;
+            margin-left: 2%;
+        }
+        hr{
+            margin: 10%;
+        }
     }
 
-    #menuButton{
+    /* #menuButton{
         min-width: 50px;
         max-width: 50px;
         min-height: 45px;
         max-height: 45px;
         margin-left: 2%;
-    }
+    } */
 
-    #menuButton hr{
+    /* #menuButton hr{
         margin: 10%;
 
-    }
+    } */
 
     #menuH{
         display: none;
@@ -146,16 +183,22 @@
         min-height: 80px;
         max-height: 80px;
         background-color: rgb(3,3,3);
+        button{
+            display: none;
+        }
+        hr{
+            margin: 10%;
+        }
     }
 
-    #menuButton{
+    /* #menuButton{
         display: none;
-    }
+    } */
 
-    #menuButton hr{
+    /* #menuButton hr{
         margin: 10%;
 
-    }
+    } */
 
     #menuH{
         min-height: 35px;
@@ -192,16 +235,22 @@
     #container{
         min-height: 80px;
         max-height: 80px;
+        button{
+            display: none;
+        }
+        hr{
+            margin: 10%;
+        }
     }
 
-    #menuButton{
+    /* #menuButton{
         display: none;
-    }
+    } */
 
-    #menuButton hr{
+    /* #menuButton hr{
         margin: 10%;
 
-    }
+    } */
 
     #menuH{
         min-height: 35px;

@@ -1,15 +1,15 @@
 <div id="container">
-    <div id="menuButton"
-    (click)="handleMenuClick()">
+    <button (click)="handleMenuClick()">
         <hr>
         <hr>
         <hr>
-    </div>
+    </button>
+    <!-- todo!! -->
     <div id="menuH">
         @for(x of menuOptionsList; track $index){
             <div class="menuOptionH"
             (click)="handleOptionClick($index)">
-                <b>{{x}}</b>
+                <span>{{x}}</span>
             </div>
         }
     </div>
@@ -18,7 +18,9 @@
             @for(x of menuOptionsList; track $index){
                 <div class="menuOption"
                 [@menuOptionsAn]="auxOptionsAnimation"
-                (click)="handleOptionClick($index)">· {{x}}</div>
+                (click)="handleOptionClick($index)">
+                    <span>· {{x}}</span>
+                </div>
             }
         </div>
 </div>
