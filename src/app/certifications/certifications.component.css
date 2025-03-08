@@ -53,7 +53,18 @@
     rgba(0, 0, 250, 0.8),  
     rgba(0, 0, 255, 0.8) 
 );
-box-shadow: 0.5px 1px 1px 1px grey;
+    box-shadow: 0.5px 1px 1px 1px grey;
+    span{
+        border-radius: 5px;
+        padding: 1%;
+        width: 75%;
+        background-color: rgba(200,200,200,0.3);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-overflow: ellipsis;
+    }
 }
 
 .certificationIMG{
@@ -72,7 +83,7 @@ box-shadow: 0.5px 1px 1px 1px grey;
     height: auto;
 }
 
-.certificationText{
+/* .certificationText{
     border-radius: 5px;
     padding: 1%;
     width: 75%;
@@ -82,7 +93,7 @@ box-shadow: 0.5px 1px 1px 1px grey;
     align-items: center;
     justify-content: center;
     text-overflow: ellipsis;
-}
+} */
 
 @media(max-width: 320px){
     #component{
@@ -101,6 +112,10 @@ box-shadow: 0.5px 1px 1px 1px grey;
         max-height: 60px;
         margin-top: 2%;
         margin-bottom: 1%;
+        span{
+            min-height: 43px;
+            max-height: 43px;
+        }
     }
 
     .certificationIMG{
@@ -109,10 +124,10 @@ box-shadow: 0.5px 1px 1px 1px grey;
         margin: 1.5%;
     }
 
-    .certificationText{
+    /* .certificationText{
         min-height: 43px;
         max-height: 43px;
-    }
+    } */
 }
 
 @media(min-width: 321px) and (max-width: 480px){
@@ -132,6 +147,10 @@ box-shadow: 0.5px 1px 1px 1px grey;
         max-height: 80px;
         margin-top: 2%;
         margin-bottom: 1%;
+        span{
+            min-height: 43px;
+            max-height: 43px;
+        }
     }
 
     .certificationIMG{
@@ -140,10 +159,10 @@ box-shadow: 0.5px 1px 1px 1px grey;
         margin: 1.5%;
     }
 
-    .certificationText{
+    /* .certificationText{
         min-height: 43px;
         max-height: 43px;
-    }
+    } */
 }
 
 @media(min-width: 481px) and (max-width: 960px){
@@ -164,6 +183,10 @@ box-shadow: 0.5px 1px 1px 1px grey;
         max-height: 85px;
         margin-top: 2%;
         margin-bottom: 1%;
+        span{
+            min-height: 43px;
+            max-height: 43px;
+        }
     }
 
     .certificationIMG{
@@ -173,10 +196,10 @@ box-shadow: 0.5px 1px 1px 1px grey;
         margin-right: 3%;
     }
 
-    .certificationText{
+    /* .certificationText{
         min-height: 43px;
         max-height: 43px;
-    }
+    } */
 }
 
 @media(min-width: 769px) and (max-width: 1328px){
@@ -197,6 +220,11 @@ box-shadow: 0.5px 1px 1px 1px grey;
         min-height: 53px;
         max-height: 53px;
         box-shadow: 2px 3px 1px 1px grey;
+        span{
+            min-height: 40px;
+            max-height: 40px;
+            font-size: 120%;
+        }
     }
 
     .certificationIMG{
@@ -206,11 +234,11 @@ box-shadow: 0.5px 1px 1px 1px grey;
         margin-right: 2%;
     }
 
-    .certificationText{
+    /* .certificationText{
         min-height: 40px;
         max-height: 40px;
         font-size: 120%;
-    }
+    } */
 }
 
 @media(min-width: 960px) and (max-width: 1328px){
@@ -225,9 +253,14 @@ box-shadow: 0.5px 1px 1px 1px grey;
         width: 70%;
     }
 
-    .certificationText{
-        width: 83%;
+    .certificationContent{
+        span{
+            width: 83%;
+        }
     }
+    /* .certificationText{
+        width: 83%;
+    } */
 
     .certificationIMG{
         min-height: 90px;
@@ -257,6 +290,11 @@ box-shadow: 0.5px 1px 1px 1px grey;
         max-height: 53px;
         box-shadow: 2px 3px 1px 1px grey;
         margin-bottom: 2.3%;
+        span{
+            min-height: 40px;
+            max-height: 40px;
+            font-size: 120%;
+        }
     }
 
     .certificationIMG{
@@ -266,18 +304,18 @@ box-shadow: 0.5px 1px 1px 1px grey;
         margin-right: 2%;
     }
 
-    .certificationText{
+    /* .certificationText{
         min-height: 40px;
         max-height: 40px;
         font-size: 120%;
-    }
+    } */
 }
 
 @media(min-width: 480px){
     #component{
         border: none;
         background-color: rgb(1,1,1);
-    }
+    } 
 
     #certificationsComponent{
         background: radial-gradient(circle, rgb(50,50,50),rgb(40,40,40),

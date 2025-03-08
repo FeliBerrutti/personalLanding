@@ -1,5 +1,6 @@
 <div id="component">
-    <h2><b>Certificaciones</b></h2>
+    <!-- todo!! -->
+    <h2>Certificaciones</h2>
     <div id="certificationsComponent">
         @for(x of certificationsList; track $index){
             <div class="certificationContent"
@@ -7,7 +8,7 @@
                 <div class="certificationIMG">
                     <img [src]="handleCertificationIMG($index)" alt="">
                 </div>
-                <div class="certificationText">{{x}}</div>
+                <span>{{x}}</span>
             </div>
         }
     </div>
