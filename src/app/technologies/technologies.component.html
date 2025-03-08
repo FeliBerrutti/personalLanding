@@ -1,12 +1,12 @@
 <div id="container">
-    <h2 class="contentTitles"><b>Tecnologías</b></h2>
+    <h2><b>Tecnologías</b></h2>
     <div id="cardContainer">
         @for (x of technologiesList; track $index){
             <div class="card">
                 <div class="cardIMG">
                     <img [src]="handleIMG($index)" alt="">
                 </div>
-                <b>{{x}}</b>
+                <span><b>{{x}}</b></span>
             </div>
         }
     </div>
