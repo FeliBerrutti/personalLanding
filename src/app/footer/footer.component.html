@@ -1,31 +1,31 @@
 <div id="container">
     <div class="footerContent">
-        <b class="contentTitles">Seguime</b>
+        <span><b>Seguime</b></span>
         @for(x of followList; track $index){
-            <div class="footerContentText"
+            <span class="footerContentText"
             (click)="handleFollowClick($index)">
                 {{x}}
-            </div>
+            </span>
         }
-    </div>
+    </div> 
     <hr>
     <div class="footerContent">
-        <b class="contentTitles">Contactame</b>
+        <span><b>Contactame</b></span>
         @for(x of contactList; track $index){
-            <div class="footerContentText"
+            <span class="footerContentText"
             (click)="handleContactClick($index)">
                 {{x}}
-            </div>
+            </span>
         }
     </div>
     <hr>
     <div class="footerContent">
-        <b class="contentTitles">Agradecimientos</b>
+        <span><b>Agradecimientos</b></span>
         @for(x of aboutList; track $index){
-            <div class="footerContentText"
+            <span class="footerContentText"
             (click)="handleThanksClick($index)">
                 {{x}}
-            </div>
+            </span>
         }
     </div>
 </div>
