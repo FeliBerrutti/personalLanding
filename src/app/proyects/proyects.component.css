@@ -7,6 +7,9 @@
     background-color: rgba(0,0,0,0.95);
     border-top: 2px solid orange;
     border-bottom: 2px solid orange;
+    h2{
+        color: orange;
+    }
 }
  
 #proyectsCardContainer{

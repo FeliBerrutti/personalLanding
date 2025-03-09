@@ -1,6 +1,6 @@
 <div id="container">
     <div class="footerContent">
-        <span><b>Seguime</b></span>
+        <h4>Seguime</h4>
         @for(x of followList; track $index){
             <span class="footerContentText"
             (click)="handleFollowClick($index)">
@@ -10,7 +10,7 @@
     </div> 
     <hr>
     <div class="footerContent">
-        <span><b>Contactame</b></span>
+        <h4>Contactame</h4>
         @for(x of contactList; track $index){
             <span class="footerContentText"
             (click)="handleContactClick($index)">
@@ -20,7 +20,7 @@
     </div>
     <hr>
     <div class="footerContent">
-        <span><b>Agradecimientos</b></span>
+        <h4>Agradecimientos</h4>
         @for(x of aboutList; track $index){
             <span class="footerContentText"
             (click)="handleThanksClick($index)">

@@ -24,11 +24,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.footerContentText{
-    padding: 0.2%;
-    text-align: center;
+    h4{
+        color: orange;
+        margin: 0;
+    }
+    span{
+        padding: 0.2%;
+        text-align: center;
+        color: rgb(200,155,50);
+    }
+    span:hover{
+        cursor: pointer;
+        color: rgba(230,165,0,0.6);
+    }
 }
 
 @media(max-width: 320px){
@@ -40,12 +48,11 @@
  
     .footerContent{
         max-height: 90px;
-    }
-
-    .footerContentText{
-        min-width: 100px;
-        max-width: 100px;
-        margin-top: 3%;
+        span{
+            min-width: 100px;
+            max-width: 100px;
+            margin-top: 3%;
+        }
     }
 }
 
@@ -58,12 +65,11 @@
 
     .footerContent{
         max-height: 100px;
-    }
-
-    .footerContentText{
-        min-width: 100px;
-        max-width: 100px;
-        margin-top: 3%;
+        span{
+            min-width: 100px;
+            max-width: 100px;
+            margin-top: 3%;
+        }
     }
 }
 
@@ -76,12 +82,11 @@
 
     .footerContent{
         max-height: 110px;
-    }
-
-    .footerContentText{
-        min-width: 100px;
-        max-width: 100px;
-        margin-top: 3%;
+        span{
+            min-width: 100px;
+            max-width: 100px;
+            margin-top: 3%;
+        }
     }
 }
 
@@ -100,12 +105,11 @@
         padding-top: 2%;
         min-height: 100px;
         max-height: 100px;
-    }
-
-    .footerContentText{
-        min-width: 100px;
-        max-width: 100px;
-        margin-top: 3%;
+        span{
+            min-width: 100px;
+            max-width: 100px;
+            margin-top: 3%;
+        }
     }
 }
 
@@ -124,12 +128,11 @@
         padding-top: 2%;
         min-height: 100px;
         max-height: 100px;
-    }
-
-    .footerContentText{
-        min-width: 100px;
-        max-width: 100px;
-        margin-top: 3%;
+        span{
+            min-width: 100px;
+            max-width: 100px;
+            margin-top: 3%;
+        }
     }
 }
 
@@ -138,10 +141,5 @@
         background-color: rgb(4,4,4);
         border-top: 4px solid rgba(230,165,0,0.6);
         border-bottom: none;
-    }
-
-    .footerContentText:hover{
-        cursor: pointer;
-        color: rgba(230,165,0,0.6);
     }
 }
