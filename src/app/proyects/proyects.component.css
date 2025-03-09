@@ -243,3 +243,17 @@
         cursor: pointer;
     }
 }
+
+@media(min-width:1000px){
+    #component{
+        background-color: rgb(1,1,1);
+    }
+
+    #proyectsCardContainer{
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+        width: 99.5%;
+        background-color: rgb(1,1,1);
+    }
+}
