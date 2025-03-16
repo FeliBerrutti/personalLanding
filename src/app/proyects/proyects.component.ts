@@ -14,8 +14,9 @@ export class ProyectsComponent {
   proyectsImgList: Array<string> = ['EL10VP.gif','CRM.gif','landingShow.gif'];
 
   proyectTextList: Array<string> = [` Landing page para negocio de alquiler de volquetes.`,
-                                    `Sistema de gestión de relaciones con clientes.`,
-                                    `Mi pagina personal.`];
+                                    `Sistema de gestión de relaciones con clientes.
+                                    Usuario y contraseña: prueba`,
+                                    `Mi pagina personal, link al repositorio de Github.`];
 
   handleIMG(aux: number): string{
     return this.proyectsImgList[aux];
