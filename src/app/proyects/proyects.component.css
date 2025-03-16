@@ -253,7 +253,12 @@
         border: none;
         box-shadow: none;
         border-radius: 0;
-        width: 99.5%;
+        width: 98.5%;
+        justify-content: center;
         background-color: rgb(1,1,1);
+    }
+
+    .card{
+        margin: 1.3%;
     }
 }
