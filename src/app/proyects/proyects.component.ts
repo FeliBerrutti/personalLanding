@@ -9,14 +9,14 @@ import { CommonModule } from '@angular/common';
   styleUrl: './proyects.component.css'
 })
 export class ProyectsComponent {
-  proyectsList: Array<string> = ['El 10 de Villa Pueyrredón','CRM','Homepage'];
+  proyectsList: Array<string> = ['El 10 de Villa Pueyrredón','CRM - Versión Operador','Homepage'];
 
   proyectsImgList: Array<string> = ['EL10VP.gif','CRM.gif','landingShow.gif'];
 
   proyectTextList: Array<string> = [` Landing page para negocio de alquiler de volquetes.`,
                                     `Sistema de gestión de relaciones con clientes.
                                     Usuario y contraseña: prueba`,
-                                    `Mi pagina personal, link al repositorio de Github.`];
+                                    `Mi pagina personal, link al repositorio de GitHub.`];
 
   handleIMG(aux: number): string{
     return this.proyectsImgList[aux];
