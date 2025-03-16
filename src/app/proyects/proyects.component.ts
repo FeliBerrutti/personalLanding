@@ -24,8 +24,8 @@ export class ProyectsComponent {
   handleCardClick(aux: number): void{
     aux === 0 ?
     window.open('https://feliberrutti.github.io/EL-10-VP', '_blank') :
-    aux === 2 ?
-    window.open('https://github.com/FeliBerrutti/personalLanding', '_blank') :
-    console.log('');
+    aux === 1 ?
+    window.open('https://feliberrutti.github.io/velCRM/') :
+    window.open('https://github.com/FeliBerrutti/personalLanding', '_blank')
   };
 }
