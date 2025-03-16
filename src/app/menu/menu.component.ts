@@ -68,12 +68,7 @@ export class MenuComponent {
 
   menuOptionsList: Array<string> = ['Tecnologías','Proyectos',
                                     'Certificaciones','Contacto'];
-
-    @Output() auxShowContact = new EventEmitter<void>();
-
-    showContact(): void{
-      this.auxShowContact.emit();
-    };  
+  
 
 handleOptionClick(aux: number): void{
   this.handleMenuClick();
@@ -83,6 +78,6 @@ handleOptionClick(aux: number): void{
   document.getElementById('proyectsCardContainer')?.scrollIntoView({behavior:'smooth', block:'center'}) :
   aux === 2 ?
   document.getElementById('certificationsComponent')?.scrollIntoView({behavior: 'smooth', block: 'center'}) :
-  this.showContact();
+  document.getElementById('contactUsContainer')?.scrollIntoView({behavior : 'smooth', block: 'center'})
 };
 }

@@ -1,8 +1,12 @@
-<div 
-*ngIf="isContactUsVisible"
-id="container">
-    <button (click)="closeContactUs()">X</button>
-    <form *ngIf="isContactMailVisible" (submit)="sendEmail($event)">
+
+<!-- DIV SPINNER -->
+<div class="contactUsContainer" 
+style="justify-content: center;"
+*ngIf="isSpinnerVisible">
+    <spinner></spinner>
+</div>
+<div class="contactUsContainer">
+    <form (submit)="sendEmail($event)" *ngIf="isContactMailVisible">
         <div>
             <span>
                 <b>Nombre</b>

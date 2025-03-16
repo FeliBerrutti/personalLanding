@@ -1,59 +1,57 @@
 import { Component, Input, Output } from '@angular/core';
 import { CommonModule, NgIf } from '@angular/common';
-import emailjs, {type EmailJSResponseStatus} from '@emailjs/browser'
+import emailjs, {type EmailJSResponseStatus} from '@emailjs/browser';
+import { SpinnerComponent } from '../spinner/spinner.component';
 
 @Component({
   selector: 'contact-us',
   standalone: true,
-  imports: [NgIf],
+  imports: [NgIf, SpinnerComponent],
   templateUrl: './contact-us.component.html',
   styleUrl: './contact-us.component.css'
 })
 export class ContactUsComponent {
-  isContactUsVisible: boolean = true;
-  isContactUsOptionsVisible: boolean = false;
-  isContactMailVisible: boolean = true;
+  
   isMailSendOk: boolean = false;
   isMailSendError: boolean = false;
 
-  @Input() set showContactUs(value: boolean){
-    this.isContactUsVisible = !this.isContactUsVisible;
-    // this.isContactUsOptionsVisible = true;
-    this.isContactMailVisible = !this.isContactMailVisible;
-    this.isMailSendOk = false;
-    this.isMailSendError = false;
+  //VARIABLE SPINNER
+  isSpinnerVisible: boolean = false;
+
+  //FUNCIONES SPINNER
+  showSpinner(): void{
+    if(!this.isSpinnerVisible){
+      this.closeContactUs();
+      this.isSpinnerVisible = true;
+    }
   };
 
-  // handleContactUsClick(): void{
-  //   this.isContactUsVisible = !this.isContactUsVisible;
-  // };
+  closeSpinner(): void{
+    if(this.isSpinnerVisible){
+      this.isSpinnerVisible = false;
+    };
+  };
+
+  //VARIABLE FORMULARIO MAIL
+  isContactMailVisible: boolean = true;
+
+  //FUNCIONES FORMULARIO MAIL
+  
+  showContactUs(): void{
+    if(!this.isContactMailVisible){
+      this.isContactMailVisible = true;
+    }
+  };
 
   closeContactUs(): void{
-    this.isContactUsOptionsVisible = false;
-    this.isContactMailVisible = false;
-    this.isContactUsVisible = false;
-  }
-
-  // handleIMG(aux: number): string{
-  //   return this.contactIMGList[aux];
-  // };
-
-  handleContactMailButton(): void{
-    this.isContactUsOptionsVisible = !this.isContactUsOptionsVisible;
-    this.isContactMailVisible = !this.isContactMailVisible;
+    if(this.isContactMailVisible){
+      this.isContactMailVisible = false;
+    };
   };
 
-  handleContactWppButton(): void{
-    this.isContactUsVisible = !this.isContactUsVisible;
-  };
-
-  handleContactOptionClick(aux:number): void{
-    aux === 0 ?
-    this.handleContactMailButton() :
-    this.handleContactWppButton();
-  };
 
   public sendEmail(e: Event) {
+    this.showSpinner();
     e.preventDefault();
     emailjs
       .sendForm('ID02', 'TID02', e.target as HTMLFormElement, {
@@ -61,22 +59,21 @@ export class ContactUsComponent {
       })
       .then(
         () => {
-          this.isContactMailVisible = !this.isContactMailVisible;
+          this.closeSpinner();
           this.isMailSendOk = !this.isMailSendOk;
           setTimeout(() => {
-            this.isContactUsVisible = false;
-          }, 2000);
-        },
+            this.isMailSendOk = !this.isMailSendOk;
+            this.isContactMailVisible = !this.isContactMailVisible;
+          }, 3000);},
         (error) => {
-          this.isContactMailVisible = !this.isContactMailVisible;
+          this.closeSpinner();
           this.isMailSendError = !this.isMailSendError;
+          setTimeout(() => {
+          this.isMailSendError = !this.isMailSendError;
+          this.showContactUs();
+          }, 3000);
           console.log((error as EmailJSResponseStatus).text);
         },
       );
   }
-
-
-
-  // contactList: Array<string> = ['Mail','Whatsapp'];
-  // contactIMGList: Array<string> = ['MAIL.png','WPP.png'];
 }
