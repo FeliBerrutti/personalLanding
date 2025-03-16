@@ -78,6 +78,6 @@ handleOptionClick(aux: number): void{
   document.getElementById('proyectsCardContainer')?.scrollIntoView({behavior:'smooth', block:'center'}) :
   aux === 2 ?
   document.getElementById('certificationsComponent')?.scrollIntoView({behavior: 'smooth', block: 'center'}) :
-  document.getElementById('contactUsContainer')?.scrollIntoView({behavior : 'smooth', block: 'center'})
+  document.getElementById('targetScroll')?.scrollIntoView({behavior : 'smooth', block: 'center'})
 };
 }

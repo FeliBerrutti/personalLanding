@@ -102,7 +102,7 @@
 @media(max-width: 320px){
     .contactUsContainer{
         margin-top: 3%;
-        min-height: 370px;
+        min-height: 430px;
         button{
             min-height: 20px;
             max-height: 20px;
@@ -162,7 +162,7 @@
 @media(min-width: 321px) and (max-width: 480px){
     .contactUsContainer{
         margin-top: 3%;
-        min-height: 430px;
+        min-height: 480px;
         button{
             min-height: 20px;
             max-height: 20px;

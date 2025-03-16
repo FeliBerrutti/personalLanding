@@ -5,8 +5,9 @@ style="justify-content: center;"
 *ngIf="isSpinnerVisible">
     <spinner></spinner>
 </div>
-<div class="contactUsContainer">
+<div class="contactUsContainer" id="targetScroll">
     <form (submit)="sendEmail($event)" *ngIf="isContactMailVisible">
+        <h2>Contacto</h2>
         <div>
             <span>
                 <b>Nombre</b>
