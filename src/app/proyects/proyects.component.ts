@@ -31,6 +31,8 @@ export class ProyectsComponent {
     window.open('https://feliberrutti.github.io/velCRM/', '_blank') :
     aux === 2 ?
     window.open('https://github.com/FeliBerrutti/personalLanding', '_blank') :
-    window.open('https://lbsoftwaredevs.github.io/muestraRestaurante/', '_blank')
+    aux === 3 ?
+    window.open('https://lbsoftwaredevs.github.io/muestraRestaurante/', '_blank') :
+    window.open('https://lbsoftwaredevs.github.io/muestraGym/', '_blank');
   };
 }
