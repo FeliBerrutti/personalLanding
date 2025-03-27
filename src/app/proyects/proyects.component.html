@@ -5,11 +5,10 @@
         @for(x of proyectsList; track $index){
             <div class="card"
             (click)="handleCardClick($index)">
-                <div class="cardIMG">
+            <img [src]="handleIMG($index)" alt="el10go" width="100%" height="100%">
+                <!-- <div class="cardIMG">
                     <img [src]="handleIMG($index)" alt="el10go" width="100%" height="100%">
-                </div>
-                    <span><b>{{x}}</b></span>
-                    <span class="proyectCardText">{{proyectTextList[$index]}}</span>
+                </div> -->
             </div>
         }
     </div>
