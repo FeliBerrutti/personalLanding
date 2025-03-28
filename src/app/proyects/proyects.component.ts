@@ -9,16 +9,9 @@ import { CommonModule } from '@angular/common';
   styleUrl: './proyects.component.css'
 })
 export class ProyectsComponent {
-  proyectsList: Array<string> = ['El 10 de Villa Pueyrredón','CRM - Versión Operador','Homepage','Restaurante Las Victorias','Espartanos Gym'];
+  proyectsList: Array<string> = ['El 10 de Villa Pueyrredón','CRM - Versión Operador','Restaurante Las Victorias','Espartanos Gym'];
 
-  proyectsImgList: Array<string> = ['EL10VP.gif','CRM.gif','landingShow.gif','restaurantGIF.gif','mGYM.gif'];
-
-  proyectTextList: Array<string> = [` Landing page para negocio de alquiler de volquetes.`,
-                                    `Sistema de gestión de relaciones con clientes.
-                                    Usuario y contraseña: prueba`,
-                                    `Mi pagina personal, link al repositorio de GitHub.`,
-                                    `Simulación de pagina web para restaurantes.`,
-                                    `Simulación de pagina web para gymnasios.`];
+  proyectsImgList: Array<string> = ['EL10VPbanner.png','CRMbanner.png','LASVICTORIASbanner.png','ESPARTANOSbanner.png'];
 
   handleIMG(aux: number): string{
     return this.proyectsImgList[aux];
