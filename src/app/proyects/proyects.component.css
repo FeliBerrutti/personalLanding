@@ -35,6 +35,11 @@
     overflow: hidden;
 }
 
+.card:hover{
+    cursor: pointer;
+    border: 2px solid white;
+}
+
 @media(max-width: 320px){
     #component{
         margin-top: 4%;
@@ -100,10 +105,6 @@
         border-top: none;
         border-bottom: 4px solid rgba(230,165,0,0.6);
         background: rgb(1,1,1)
-    }
-
-    .card:hover{
-        cursor: pointer;
     }
 }
 
